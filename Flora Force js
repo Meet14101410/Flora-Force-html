@@ -1,0 +1,6 @@
+function check(ans){
+  const result = document.getElementById("result");
+  result.textContent = ans === "right"
+    ? "✅ Correct!"
+    : "❌ Try Again!";
+}
