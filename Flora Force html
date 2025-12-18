@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flora Force</title>
+  <style>
+    body { font-family: Arial; text-align: center; background: #e8f5e9; }
+    button { padding: 10px; margin: 5px; background: #43a047; color: white; border: none; }
+  </style>
+</head>
+<body>
+
+<h1>🌱 Flora Force</h1>
+<p id="q">Photosynthesis occurs in?</p>
+
+<button onclick="check('wrong')">Roots</button>
+<button onclick="check('right')">Chloroplast</button>
+<button onclick="check('wrong')">Stem</button>
+
+<p id="result"></p>
+
+<script>
+function check(ans){
+  document.getElementById("result").innerText =
+    ans === "right" ? "✅ Correct!" : "❌ Try Again!";
+}
+</script>
+
+</body>
+</html>
